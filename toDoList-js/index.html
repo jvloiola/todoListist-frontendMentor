@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <header>
+       <!--  <img id="img-header" src="/images/bg-desktop-light.jpg" alt=""> -->
+    </header>
+    <div class="span">
+        <span class="todo">T O D O</span>
+        
+        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/></svg>
+        
+    
+    </div>
+    <div class="conatiner-absolute">
+        <form class="container-top">
+            <input style="background: hsl(0, 0%, 98%);" required="" placeholder="ESCREVA UM ÍTEM..." class="input-text" type="text" name="item" id="item-input" data-form-input="">
+            <button id="btn-inserir"><label for="item-input"  class="insert-button" type="submit"  data-form-button="">INSERIR</label></button>
+        </form>
+    </div>
+    <div class="container" id="lista-itens">
+        <template id="template-item">
+            <div class="item-list">
+                <input  type="checkbox" name="" id="checkbox">
+                <label id="label-checkbox" for="checkbox" style="text-align: center;line-height: 50px;"></label>
+                <button  data-set=""  id="btn-excluir">X</button>
+            </div>
+        </template>
+    </div>
+    <div class="footer">
+        <div class="footer-keft"></div>
+        <div class="footer-center"></div>
+    </div>
+    <script type="module" src="./ExcluiItem.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
